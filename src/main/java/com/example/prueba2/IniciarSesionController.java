@@ -37,7 +37,6 @@ public class IniciarSesionController {
     public void loginButtonOnAction(ActionEvent e){
 
         if(usernameTextField.getText().isBlank() == false && passwordField.getText().isBlank() == false){
-            loginMessageLabel.setText("You try to login!");
             validateLogin();
         }else{
             loginMessageLabel.setText("Por favor, ingresa nombre de usuario y contraseña");
